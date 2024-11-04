@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+<script>
+    $(document).ready(function() {
+        $("#send").addClass("animated bounce");
+        $("#send").css("color", "blue");
+    });
+</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +54,7 @@
         <p>輸入Email，獲得新文章通知</p>
         <form>
             <input type="email" placeholder="輸入您的Email">
-            <button type="submit">送出</button>
+            <button type="submit" id="#send">送出</button>
         </form>
     </footer>
 </body>
